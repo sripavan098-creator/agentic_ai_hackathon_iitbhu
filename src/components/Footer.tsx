@@ -29,6 +29,7 @@ export default function Footer() {
                 { href: '#architecture', label: 'System Architecture' },
                 { href: '#demo', label: 'Interactive Demo' },
                 { href: '#impact', label: 'Expected Impact' },
+                { href: '#code', label: 'Source Code' },
                 { href: '#repository', label: 'GitHub Repository' },
               ].map((link) => (
                 <a key={link.href} href={link.href} className="block text-sm text-slate-400 hover:text-white transition-colors">
