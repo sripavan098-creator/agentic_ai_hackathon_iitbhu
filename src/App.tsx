@@ -5,6 +5,7 @@ import Solution from './components/Solution';
 import Architecture from './components/Architecture';
 import HowItWorks from './components/HowItWorks';
 import Impact from './components/Impact';
+import StreamlitDemo from './components/StreamlitDemo';
 import CodeShowcase from './components/CodeShowcase';
 import Repository from './components/Repository';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ export default function App() {
       <Solution />
       <Architecture />
       <HowItWorks />
+      <StreamlitDemo />
       <Impact />
       <CodeShowcase />
       <Repository />
