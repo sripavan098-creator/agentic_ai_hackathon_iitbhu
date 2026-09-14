@@ -5,6 +5,7 @@ import Solution from './components/Solution';
 import Architecture from './components/Architecture';
 import HowItWorks from './components/HowItWorks';
 import Impact from './components/Impact';
+import Repository from './components/Repository';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <Architecture />
       <HowItWorks />
       <Impact />
+      <Repository />
       <Footer />
     </div>
   );
