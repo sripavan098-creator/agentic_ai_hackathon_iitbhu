@@ -7,9 +7,10 @@ const navLinks = [
   { href: '#solution', label: 'Solution' },
   { href: '#architecture', label: 'Architecture' },
   { href: '#demo', label: 'Demo' },
+  { href: '#streamlit-demo', label: 'App Demo' },
   { href: '#impact', label: 'Impact' },
   { href: '#code', label: 'Code' },
-  { href: '#repository', label: 'Repository' },
+  { href: '#repository', label: 'Repo' },
 ];
 
 export default function Navbar() {

@@ -2,28 +2,32 @@
 MediAdvocate Agent State Definition
 Defines the agent's memory structure as it moves through the workflow loop.
 """
-from typing import TypedDict, List, Annotated
+from typing import TypedDict, List, Annotated, Optional
 import operator
 
 
 class AgentState(TypedDict):
     # Input
-    user_prompt: str
     bill_text: str
 
     # Extracted Data
-    cpt_code: str
-    denial_reason: str
+    cpt_code: Optional[str]
+    denial_reason: Optional[str]
 
-    # Agentic Workflow State
-    policy_clauses: str
-    market_price: str
-    draft_letter: str
-    evaluation_passed: bool
+    # Evidence Gathered
+    policy_clauses: Optional[str]
+    market_price: Optional[str]
+
+    # Draft & Evaluation
+    draft_letter: Optional[str]
+    evaluation_feedback: Optional[str]
 
     # Adaptation / Failure Handling
-    pushback_reason: str
-    adaptation_search_results: str
+    pushback_reason: Optional[str]
+    adaptation_evidence: Optional[str]
+
+    # Iteration tracking
+    iteration_count: int
 
     # Message history for the LLM
     messages: Annotated[List, operator.add]
